@@ -1,15 +1,12 @@
-.title {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Old Standard TT',serif;
-}
-
 .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10 px;
     align-content: flex-start;
-
 }
 
-/* Typografia incorporada de google fonts*/
+
+/* Typografia incorporada de google fonts para el titulo*/
 .bungee-tint-regular { 
     font-family: "Bungee Tint", sans-serif;
     font-weight: 400;
