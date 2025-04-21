@@ -1,18 +1,102 @@
 .content {
     display: flex;
     flex-wrap: wrap;
-    gap: 10 px;
-    align-content: flex-start;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
+.item {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-/* Typografia incorporada de google fonts para el titulo*/
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 .bungee-tint-regular { 
     font-family: "Bungee Tint", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    font-size: 50px;
-    
-  }
-  
+    font-size: 3rem; /* Usar rem en lugar de px */
+    color: #222; /* Más oscuro para mayor contraste */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.item img:hover {
+    transform: scale(1.1);
+}
+
+/* Asegurar la accesibilidad con enfoque */
+a:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 90%;
+    }
+
+    .bungee-tint-regular {
+        font-size: 2.5rem; /* Reducir el tamaño en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: 100%;
+    }
+}
+
+/* Desactivar animaciones para personas con "reducir movimiento" activado */
+@media (prefers-reduced-motion: reduce) {
+    .item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px; /* Inicialmente lo oculta por encima de la pantalla */
+    left: 10px;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: top 0.3s ease;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 10px; /* Cuando el usuario tabula hacia él, el enlace se hace visible */
+    outline: 2px solid #ffcc00; /* Resalta el enlace al hacer foco */
+}
+
+@media (max-width: 768px) {
+    .skip-link {
+        top: 10px; /* En pantallas pequeñas, el enlace será visible desde el principio */
+    }
+}
