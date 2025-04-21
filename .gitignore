@@ -1,0 +1,9 @@
+# Archivos de configuración de IDE
+.vscode/
+.idea/
+
+# Archivos de log
+*.log
+
+# Archivos de configuración de editor
+*.swp
