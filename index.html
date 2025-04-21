@@ -1,47 +1,56 @@
 <!DOCTYPE html>
-<html lang="es"><!--idioma:español-->
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ajuste de escala movil-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Reseñas de Películas</title>
-        <!-- Preconexión a Google Fonts para mejorar tiempo de carga -->
+    <meta property="og:title" content="Opiniones de películas que no cambiaron mi vida">
+    <meta property="og:description" content="Reseñas sarcásticas de películas que no te harán reír.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+        
 </head>
 <body>
-    <header>
-        <h1 class="bungee-tint-regular">Bienvenidos a mis reseñas</h1>
-    </header>
-    <div class="content">
-        
-    <main class="content">
+    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+    <header role="banner" aria-label="Encabezado de reseñas de películas">
+        <h1 class="bungee-tint-regular">Opiniones de películas que no cambiaron mi vida</h1>
+    </header>        
+    <main id="contenido" role="main" aria-label="Contenido principal de reseñas" class="content">
         <article class="item">
-            <img src="img/avg.jpeg" alt="Afiche promocional Avengers: los vengadores">
-            <p>Vengadores: Dos horas de explosiones, frases cancheras y gente con trajes apretados salvando un mundo que, sinceramente, merecía hundirse.</p>
+            <img src="img/avg.jpeg" alt="Póster de la película Avengers con los superhéroes en pose épica">
+            <h2>Los Vengadores</h2>
+            <p>Dos horas de explosiones, frases cancheras y gente con trajes apretados salvando un mundo que, sinceramente, merecía hundirse.</p>
         </article>
 
         <article class="item">
-            <img src="img/et.jpeg" alt="Afiche promocional E.T. el extraterrestre">
-            <p>E.T.: Un bicho con dedos de linterna que se hace amigo de un nene insoportable. Lo peor es que encima te quieren hacer llorar.</p>
+            <img src="img/et.jpeg" alt="Póster de la película E.T., con el dedo luminoso tocando al humano.">
+            <h2>E.T. el extraterrestre</h2>
+            <p>Un bicho con dedos de linterna que se hace amigo de un nene insoportable. Lo peor es que encima te quieren hacer llorar.</p>
         </article>
 
         <article class="item">
-            <img src="img/gb.jpeg" alt="Afiche promocional ghostbusters">
-            <p>Cazafantasmas: Un desfile de fantasmas truchos y chistes que no causan gracia, todo para que cuatro tipos se luzcan con mochilas que ni en la ferretería te venderían.</p>
+            <img src="img/gb.jpeg" alt="Póster de la película Cazafantasmas, fondo negro y logo del fantasma tachado.">
+            <h2>Cazafantasmas</h2>
+            <p>Un desfile de fantasmas truchos y chistes que no causan gracia, todo para que cuatro tipos se luzcan con mochilas que ni en la ferretería te venderían.</p>
         </article>
 
         <article class="item">
-            <img src="img/jk.jpeg" alt="Afiche promocional joker">
-            <p>Joker: Un payaso triste que se queja de la vida y se convierte en ídolo de gente que seguro tampoco entendió la película.</p>
+            <img src="img/jk.jpeg" alt="Póster de Joker mostrando al personaje maquillado y sombrío.">
+            <h2>Joker</h2>
+            <p>Un payaso triste que se queja de la vida y se convierte en ídolo de gente que seguro tampoco entendió la película.</p>
         </article>
 
         <article class="item">
-            <img src="img/vf.jpeg" alt="Afiche promocional volver al futuro">
-            <p>Volver al futuro: Un pibe y un auto que viajan en el tiempo. Suena divertido... hasta que la ves y entendés que es puro humo ochentoso.<p>
+            <img src="img/vf.jpeg" alt="Póster de Volver al Futuro con Marty y el DeLorean.">
+            <h2>Volver al futuro</h2>
+            <p>Volver al futuro: Un pibe y un auto que viajan en el tiempo. Suena divertido... hasta que la ves y entendés que es puro humo ochentoso.</p>
         </article>
     </main>
-    
+    <footer role="contentinfo" aria-label="Pie de página con información legal o créditos">
+        <p>© 2025 Reseñas Sarcásticas. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
